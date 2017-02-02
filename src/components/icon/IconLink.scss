@@ -6,6 +6,7 @@
 
   color: var(--color-context-text-subtle);
 
-  &:hover  { color: $color-ui-primary-2; }
-  &:active { color: $color-ui-primary-0; }
+  &:hover  {
+    color: var(--color-context-text);
+  }
 }
