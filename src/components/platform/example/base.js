@@ -50,7 +50,7 @@ export default class PlatformExample extends Component {
             </Dock>
 
             <Console isVisible={ consoleContent[active] }>
-              <div style={ { padding: 12 } }>
+              <div style={ { padding: '1.5rem' } }>
                 <Paragraph>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Curabitur justo ipsum, mollis ut turpis blandit, molestie
@@ -107,7 +107,7 @@ export default class PlatformExample extends Component {
             </Console>
 
             <Canvas isShifted={ consoleContent[active] }>
-              <div style={ { padding: 12 } }>
+              <div style={ { padding: '1.5rem' } }>
                 <Paragraph>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Curabitur justo ipsum, mollis ut turpis blandit, molestie
