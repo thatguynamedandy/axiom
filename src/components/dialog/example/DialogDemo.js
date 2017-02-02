@@ -7,6 +7,7 @@ import {
   DialogBody,
   DialogFooter,
   DialogHeader,
+  Heading,
 } from 'bw-axiom';
 
 export default class DialogDemo extends Component {
@@ -26,7 +27,7 @@ export default class DialogDemo extends Component {
           do {
             if (withTitle) {
               <DialogHeader onRequestClose={ onRequestClose }>
-                Dialog Title
+                <Heading style="title">Dialog Title</Heading>
               </DialogHeader>;
             }
           }
