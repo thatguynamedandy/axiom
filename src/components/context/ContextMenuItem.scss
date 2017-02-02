@@ -1,0 +1,21 @@
+@import '../../design-patterns/animations/mixins';
+@import '../../design-patterns/colors/vars';
+@import '../../design-patterns/spacing/vars';
+@import './vars';
+
+.ax-context-menu__item {
+  @include transition((background-color, color));
+
+  background-color: var(--color-context-background);
+  color: var(--color-context-text);
+
+  &:hover {
+    background-color: $color-ui-primary-1;
+    color: $color-ui-light-2;
+  }
+}
+
+.ax-context-menu__item-link {
+  display: block;
+  padding: $component-padding-lg $context-box-padding-lg;
+}

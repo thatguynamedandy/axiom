@@ -1,6 +1,7 @@
 @import '../../design-patterns/colors/vars';
 @import '../../design-patterns/colors/colors-light';
 @import '../../design-patterns/spacing/vars';
+@import './vars';
 
 $context-box-tip-size: $spacing-grid-size * 3;
 $context-box-tip-space: $spacing-grid-size * 2;
@@ -33,11 +34,11 @@ $context-box-tip-space: $spacing-grid-size * 2;
 }
 
 .ax-context-box--padding-small {
-  padding: $container-padding-sm;
+  padding: $context-box-padding-sm;
 }
 
 .ax-context-box--padding-large {
-  padding: $container-padding-lg;
+  padding: $context-box-padding-lg;
 }
 
 // Arrow
