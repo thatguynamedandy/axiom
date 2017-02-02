@@ -11,29 +11,18 @@ export default class ButtonIcon extends Component {
     isEnd: PropTypes.bool,
     isStart: PropTypes.bool,
     name: PropTypes.string.isRequired,
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
-  };
-
-  static defaultProps = {
-    size: 'medium',
   };
 
   render () {
-    const { isEnd, isStart, name, size, ...rest } = this.props;
+    const { isEnd, isStart, name, ...rest } = this.props;
     const classes = classnames('ax-button__icon', {
       'ax-button__icon--start': isStart,
       'ax-button__icon--end': isEnd,
     });
 
-    const sizeMap = {
-      'small': '0.75rem',
-      'medium': '0.75rem',
-      'large': '1rem',
-    };
-
     return (
       <span { ...rest } className={ classes }>
-        <Icon name={ name } size={ sizeMap[size] } />
+        <Icon name={ name } size="1rem" />
       </span>
     );
   }

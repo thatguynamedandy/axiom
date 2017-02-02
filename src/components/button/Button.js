@@ -42,7 +42,6 @@ export default class Button extends Component {
       child.type !== ButtonIcon ? child : cloneElement(child, {
         isEnd: index === array.length - 1,
         isStart: index === 0,
-        size,
       })
     );
 
