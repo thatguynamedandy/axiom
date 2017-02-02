@@ -10,36 +10,36 @@ export default class ContextMenuExample extends Component {
           <ContextMenu position="bottom">
             <ContextMenuItem>
               <Grid snippetReplace={ true } vAlign="middle">
-                <GridCell>
-                  Nam dignissim bibendum
-                </GridCell>
-
                 <GridCell shrink={ true }>
                   <Icon name="twitter" />
+                </GridCell>
+
+                <GridCell>
+                  Nam dignissim bibendum
                 </GridCell>
               </Grid>
             </ContextMenuItem>
 
             <ContextMenuItem>
               <Grid snippetReplace={ true } vAlign="middle">
-                <GridCell>
-                  Nam dignissim bibendum
-                </GridCell>
-
                 <GridCell shrink={ true }>
                   <Icon name="twitter" />
+                </GridCell>
+
+                <GridCell>
+                  Nam dignissim bibendum
                 </GridCell>
               </Grid>
             </ContextMenuItem>
 
             <ContextMenuItem>
               <Grid snippetReplace={ true } vAlign="middle">
-                <GridCell>
-                  Nam dignissim bibendum
-                </GridCell>
-
                 <GridCell shrink={ true }>
                   <Icon name="twitter" />
+                </GridCell>
+
+                <GridCell>
+                  Nam dignissim bibendum
                 </GridCell>
               </Grid>
             </ContextMenuItem>
