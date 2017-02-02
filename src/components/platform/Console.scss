@@ -14,7 +14,8 @@
   left: 0;
   transform: translateX(-100%);
   border-right: 0.0625rem solid $color-ui-light-0;
-  background-color: $color-ui-light-1;
+  background-color: $color-ui-light-2;
+  color: $color-ui-dark-0;
   overflow: auto;
   z-index: $z-index-platform - 1;
 }

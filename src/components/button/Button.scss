@@ -73,7 +73,7 @@ button {
 .ax-button--primary {
   border-color: transparent;
   background-color: $color-ui-primary-1;
-  color: $color-ui-light-1;
+  color: $color-ui-light-2;
 
   &:hover  { background-color: $color-ui-primary-2; }
   &:active { background-color: $color-ui-primary-0; }
@@ -97,7 +97,7 @@ button {
   &:active {
     border-color: transparent;
     background-color: $color-ui-primary-0;
-    color: $color-ui-light-1;
+    color: $color-ui-light-2;
   }
 
   &[disabled] {

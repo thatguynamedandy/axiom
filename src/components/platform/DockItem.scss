@@ -9,7 +9,7 @@
   flex-direction: column;
   width: $platform-dock-size;
   height: $platform-dock-size;
-  color: $color-ui-light-1;
+  color: $color-ui-light-2;
 
   &:hover {
     color: $color-ui-primary-2;
@@ -23,7 +23,7 @@
 .ax-platform__dock-item--active,
 .ax-platform__dock-item--active:hover {
   background-color: $color-ui-primary-1;
-  color: $color-ui-light-1;
+  color: $color-ui-light-2;
 }
 
 .ax-platform__dock-item-link {
