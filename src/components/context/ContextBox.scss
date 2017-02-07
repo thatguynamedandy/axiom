@@ -14,12 +14,14 @@ $context-box-tip-space: $spacing-grid-size * 2;
 
 .ax-context-box--top {
   margin-bottom: $context-box-tip-size;
+  padding-top: $context-box-tip-space;
   padding-bottom: $context-box-tip-space;
 }
 
 .ax-context-box--bottom {
   margin-top: $context-box-tip-size;
   padding-top: $context-box-tip-space;
+  padding-bottom: $context-box-tip-space;
 }
 
 .ax-context-box--right {
