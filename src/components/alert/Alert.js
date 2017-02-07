@@ -9,7 +9,7 @@ if (__INCLUDE_CSS__) {
 export default class Alert extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    color: PropTypes.oneOf(['grey', 'valid', 'invalid']),
+    color: PropTypes.oneOf(['grey', 'valid', 'invalid', 'primary']),
     onRemoveClick: PropTypes.func,
   };
 
