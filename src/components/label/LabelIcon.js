@@ -22,7 +22,7 @@ export default class LabelIcon extends Component {
 
     return (
       <span className={ classes }>
-        <IconLink { ...rest } />
+        <IconLink { ...rest } size="1rem" />
       </span>
     );
   }

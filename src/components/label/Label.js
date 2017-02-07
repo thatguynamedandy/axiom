@@ -14,10 +14,12 @@ export default class Label extends Component {
       PropTypes.bool,
       PropTypes.oneOf(['small', 'medium', 'large']),
     ]),
+    size: PropTypes.oneOf(['small', 'medium']),
   };
 
   static defaultProps = {
     color: 'grey',
+    size: 'medium',
   };
 
   render() {
@@ -25,11 +27,13 @@ export default class Label extends Component {
       children,
       color,
       full,
+      size,
       ...rest
     } = this.props;
 
     const classes = classnames('ax-label', {
       [`ax-label--${color}`]: color,
+      [`ax-label--${size}`]: size,
       'ax-label--full': full === true,
       [`ax-label--full--${full}`]: full & full !== true,
     });
@@ -38,6 +42,7 @@ export default class Label extends Component {
       child.type !== LabelIcon ? child : cloneElement(child, {
         isEnd: index === array.length - 1,
         isStart: index === 0,
+        size,
       })
     );
 

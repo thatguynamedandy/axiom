@@ -8,10 +8,14 @@ export default class LabelExample extends Component {
       <Example name="Label actions with icons">
         <Snippet>
           <LabelGroup>
-            <Label>
+            <Label size="small">
               A Label
+              <LabelIcon name="cross" />
+            </Label>
 
-              <LabelIcon name="cross" onClick={ () => window.alert('Delete!') } />
+            <Label size="medium">
+              A Label
+              <LabelIcon name="cross" />
             </Label>
           </LabelGroup>
         </Snippet>
