@@ -1,6 +1,5 @@
 @import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
-@import '../containers/mixins';
 @import './vars';
 
 // Button Group: Base
@@ -12,8 +11,6 @@
   @include space-inline-children($spacing-grid-size * 6);
 
   .ax-chedio-buttox__container {
-    @include space-inline();
-
     display: inline-flex;
   }
 }

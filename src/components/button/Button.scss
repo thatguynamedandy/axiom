@@ -29,7 +29,6 @@ button {
 }
 
 .ax-button {
-  @include space-inline();
   @include transition((background-color, border-color, color));
 
   display: inline-flex;

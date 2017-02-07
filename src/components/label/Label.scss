@@ -8,8 +8,6 @@
 
 // Label: Base
 .ax-label {
-  @include space-inline();
-
   display: inline-flex;
   position: relative;
   align-items: center;

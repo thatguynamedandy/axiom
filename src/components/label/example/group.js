@@ -17,6 +17,18 @@ export default class LabelExample extends Component {
             <Label>A Label</Label>
             <Label>A Label</Label>
             <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
+            <Label>A Label</Label>
           </LabelGroup>
         </Snippet>
       </Example>

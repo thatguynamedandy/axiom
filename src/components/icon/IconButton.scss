@@ -4,7 +4,7 @@
 @import '../../design-patterns/spacing/mixins';
 
 .ax-icon-button {
-  @include space-inline();
+  @include space-block();
   @include transition((background-color, border-color, color));
 
   padding: 0;
@@ -36,19 +36,19 @@
 }
 
 .ax-icon-button--small {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: $spacing-grid-size * 6;
+  height: $spacing-grid-size * 6;
   border-width: 0.0625rem;
 }
 
 .ax-icon-button--medium {
-  width: 3rem;
-  height: 3rem;
+  width: $spacing-grid-size * 12;
+  height: $spacing-grid-size * 12;
   border-width: 0.0625rem;
 }
 
 .ax-icon-button--large {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: $spacing-grid-size * 18;
+  height: $spacing-grid-size * 18;
   border-width: 0.125rem;
 }
