@@ -152,6 +152,11 @@ exports[`Base renders textValid 1`] = `
   className="ax-text--valid" />
 `;
 
+exports[`Base renders textWarning 1`] = `
+<div
+  className="ax-text--warning" />
+`;
+
 exports[`Base renders textWeak 1`] = `
 <div
   className="ax-text--weak" />

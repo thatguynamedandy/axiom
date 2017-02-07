@@ -8,8 +8,8 @@ export default class FormExample extends Component {
       <Example name="Text input sizes">
         <Snippet>
           <TextInput
-              label="Small/Standard text input"
-              placeholder="Small/Standard text input" />
+              label="Medium/Standard text input"
+              placeholder="Medium/Standard text input" />
 
           <TextInput
               label="Large text input"

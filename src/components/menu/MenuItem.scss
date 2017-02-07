@@ -1,12 +1,12 @@
 @import '../../design-patterns/animations/mixins';
 @import '../../design-patterns/colors/vars';
-@import '../../design-patterns/spacing/vars';
 @import '../typography/vars';
 @import '../typography/mixins';
+@import '../vars';
 
 .ax-menu__item {
   display: inline-flex;
-  margin: 0 $component-margin-lg 0 0;
+  margin: 0 ($spacing-grid-size * 9) 0 0;
   list-style: none;
 
   &:last-child {
@@ -22,10 +22,11 @@
   flex: 0 1 auto;
   align-items: center;
   justify-content: center;
-  padding: 0 0 $component-padding-md;
-  border-bottom: 0.25rem solid transparent;
+  padding: 0 0 ($spacing-grid-size * 6);
+  border-bottom: $spacing-grid-size solid transparent;
   color: inherit;
   font-weight: $font-weight-medium;
+  line-height: $component-line-height;
 
   .ax-menu__item:hover & {
     border-bottom-color: $color-ui-primary-2;

@@ -5,7 +5,7 @@ export default class TextInputIcon extends Component {
   render () {
     return (
       <span className="ax-input__icon">
-        <IconLink { ...this.props } size="0.75rem" />
+        <IconLink { ...this.props } size="1rem" />
       </span>
     );
   }

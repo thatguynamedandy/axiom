@@ -6,7 +6,7 @@
 }
 
 .dm-doc-api__code {
-  padding: $component-padding-sm $component-padding-md;
+  padding: $spacing-grid-size ($spacing-grid-size * 2);
   background-color: $color-ui-light-2;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   white-space: normal;

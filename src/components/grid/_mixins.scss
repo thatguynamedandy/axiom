@@ -2,7 +2,7 @@
 @import '../../design-patterns/spacing/vars';
 
 @mixin grid-gutter($horizontal-gutter) {
-  $vertical-gutter: $container-margin-sm;
+  $vertical-gutter: $spacing-grid-size * 4;
 
   margin: $vertical-gutter 0 (-$vertical-gutter) (-$horizontal-gutter);
 

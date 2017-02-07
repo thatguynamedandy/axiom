@@ -26,22 +26,4 @@ describe('ButtonIcon', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-
-  it('renders with small size', () => {
-    const component = getComponent({ size: 'small' });
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('renders with medium size', () => {
-    const component = getComponent({ size: 'medium' });
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('renders with large size', () => {
-    const component = getComponent({ size: 'large' });
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });

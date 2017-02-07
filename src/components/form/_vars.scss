@@ -1,22 +1,7 @@
 @import '../../design-patterns/colors/vars';
 @import '../../design-patterns/spacing/vars';
-@import '../button/vars';
 @import '../typography/vars';
-
-$input-border-width: $button-border-width;
-$input-border-radius: $button-border-radius;
-
-$input-small-horizontal-padding: $button-medium-horizontal-padding;
-$input-large-horizontal-padding: $button-large-horizontal-padding;
-
-$input-small-vertical-padding: $button-medium-vertical-padding;
-$input-large-vertical-padding: $button-large-vertical-padding;
-
-$input-small-font-size: $font-size-body;
-$input-large-font-size: $font-size-heading-large;
-
-$input-small-line-height: $button-line-height;
-$input-large-line-height: $font-size-heading-large;
+@import '../vars';
 
 $input-border-color: var(--color-context-border);
 $input-background-color: var(--color-context-background);

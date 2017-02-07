@@ -1,9 +1,9 @@
 @import '../../design-patterns/spacing/vars';
 
 .ax-card {
-  padding: $container-padding-lg;
+  padding: $page-padding-v $page-padding-h;
 }
 
 .ax-card--compact {
-  padding: $container-padding-sm 0;
+  padding: ($spacing-grid-size * 4) 0;
 }

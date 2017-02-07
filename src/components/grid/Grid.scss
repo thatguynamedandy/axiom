@@ -6,8 +6,6 @@
 
 // Grid: Base
 .ax-grid {
-  @include grid-gutter($container-margin-sm);
-
   display: flex;
   flex-wrap: wrap;
 
@@ -45,8 +43,8 @@
 
 
 // Grid: Gutter sizing
-.ax-grid--gutters--small { @include grid-gutter($container-margin-sm); }
-.ax-grid--gutters--large { @include grid-gutter($container-margin-lg); }
+.ax-grid--gutters--small { @include grid-gutter($spacing-grid-size * 4); }
+.ax-grid--gutters--large { @include grid-gutter($spacing-grid-size * 6); }
 
 
 // Grid: Gutter removal

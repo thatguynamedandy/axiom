@@ -18,14 +18,14 @@
 
 .ax-dialog__header,
 .ax-dialog__footer {
-  padding: $container-padding-lg;
+  padding: $page-padding-v $page-padding-h;
 }
 
 .ax-dialog__body {
-  padding: 0 $container-padding-lg;
+  padding: 0 $page-padding-h;
 
-  &:first-child { padding-top: $container-padding-lg; }
-  &:last-child  { padding-bottom: $container-padding-lg; }
+  &:first-child { padding-top: $page-padding-v; }
+  &:last-child  { padding-bottom: $page-padding-v; }
 }
 
 .ax-dialog__header,

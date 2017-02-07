@@ -22,7 +22,7 @@ export default class ButtonIcon extends Component {
 
     return (
       <span { ...rest } className={ classes }>
-        <Icon name={ name } size="1rem" />
+        <Icon name={ name } />
       </span>
     );
   }

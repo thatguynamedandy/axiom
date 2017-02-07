@@ -1,6 +1,7 @@
 @import '~bw-axiom/design-patterns/colors/vars';
 @import '~bw-axiom/design-patterns/spacing/vars';
 @import '~bw-axiom/components/typography/vars';
+@import '~bw-axiom/components/vars';
 @import '../Layout/vars';
 
 .dm-nav__list-item {
@@ -9,7 +10,7 @@
 
 .dm-nav__link {
   display: block;
-  padding: $component-padding-sm $page-padding-h;
+  padding: $spacing-grid-size $page-padding-h;
 }
 
 .dm-nav__list-item--active {
@@ -19,7 +20,7 @@
 }
 
 .dm-nav__list-item--open {
-  margin-bottom: $container-padding-sm;
+  margin-bottom: $spacing-grid-size * 2;
 }
 
 // Second level
@@ -27,7 +28,7 @@
   > .dm-nav__list {
     > .dm-nav__list-item {
       > .dm-nav__link {
-        padding-left: $page-padding-h + $component-padding-md;
+        padding-left: $page-padding-h + ($spacing-grid-size * 3);
       }
     }
   }

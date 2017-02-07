@@ -1,3 +1,19 @@
+@import '../design-patterns/spacing/vars';
+@import './typography/vars';
+
+$component-border-width: 0.0625rem;
+$component-border-radius: 0.1875rem;
+
+$component-padding-vertical-small: $spacing-grid-size - $component-border-width;
+$component-padding-vertical-medium: ($spacing-grid-size * 2) - $component-border-width;
+$component-padding-vertical-large: ($spacing-grid-size * 3) - $component-border-width;
+
+$component-padding-horizontal-small: $spacing-grid-size * 3;
+$component-padding-horizontal-medium: $spacing-grid-size * 3;
+$component-padding-horizontal-large: $spacing-grid-size * 4;
+
+$component-line-height: 1rem;
+
 $z-index-platform: 200;
 $z-index-position: 800;
 $z-index-modal: 900;

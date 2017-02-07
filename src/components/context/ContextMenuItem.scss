@@ -1,7 +1,6 @@
 @import '../../design-patterns/animations/mixins';
 @import '../../design-patterns/colors/vars';
 @import '../../design-patterns/spacing/vars';
-@import './vars';
 
 .ax-context-menu__item {
   @include transition((background-color, color));
@@ -17,5 +16,5 @@
 
 .ax-context-menu__item-link {
   display: block;
-  padding: $component-padding-lg $context-box-padding-lg;
+  padding: ($spacing-grid-size * 3) ($spacing-grid-size * 6);
 }

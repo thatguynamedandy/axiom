@@ -9,7 +9,7 @@
 }
 
 .ax-chedio-buttox__group--inline {
-  @include inline-component-container(ax-chedio-buttox__container, $component-margin-sm);
+  @include space-inline-children($spacing-grid-size * 6);
 
   .ax-chedio-buttox__container {
     @include space-inline();

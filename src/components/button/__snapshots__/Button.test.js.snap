@@ -85,8 +85,8 @@ exports[`Button with ButtonIcon adds space all around if middle children 1`] = `
       className="ax-icon"
       style={
         Object {
-          "height": "0.75rem",
-          "width": "0.75rem",
+          "height": "1rem",
+          "width": "1rem",
         }
       }
       viewBox="0 0 14 14">
@@ -108,8 +108,8 @@ exports[`Button with ButtonIcon adds space to end if last child 1`] = `
       className="ax-icon"
       style={
         Object {
-          "height": "0.75rem",
-          "width": "0.75rem",
+          "height": "1rem",
+          "width": "1rem",
         }
       }
       viewBox="0 0 14 14">
@@ -129,8 +129,8 @@ exports[`Button with ButtonIcon adds space to start if first child 1`] = `
       className="ax-icon"
       style={
         Object {
-          "height": "0.75rem",
-          "width": "0.75rem",
+          "height": "1rem",
+          "width": "1rem",
         }
       }
       viewBox="0 0 14 14">

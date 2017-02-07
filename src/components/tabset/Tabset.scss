@@ -1,12 +1,7 @@
 @import '../../design-patterns/animations/mixins';
 @import '../../design-patterns/colors/vars';
-@import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
-
-$tabset-tab-spacing: $component-padding-md;
-
-$tabset-tab-small-vertical-padding: $component-padding-md;
-$tabset-tab-large-vertical-padding: $component-padding-lg;
+@import '../vars';
 
 .ax-tabset {
   @include space-block();
@@ -21,7 +16,7 @@ $tabset-tab-large-vertical-padding: $component-padding-lg;
 
   &::after {
     flex: 1 1 auto;
-    border-bottom: 0.0625rem solid var(--color-context-border);
+    border-bottom: $component-border-width solid var(--color-context-border);
     content: '';
   }
 }
@@ -30,19 +25,19 @@ $tabset-tab-large-vertical-padding: $component-padding-lg;
   @include transition((border-color, background-color, color));
 
   position: relative;
-  margin: 0 $tabset-tab-spacing 0 0;
-  border: 0.0625rem solid transparent;
-  border-radius: 0.1875rem 0.1875rem 0 0;
+  margin: 0 $component-padding-vertical-medium 0 0;
+  border: $component-border-width solid transparent;
+  border-radius: $component-border-radius $component-border-radius 0 0;
   background-color: var(--color-context-background-subtle);
   list-style: none;
 
   &::after {
     position: absolute;
-    right: -0.0625rem;
-    bottom: -0.0625rem;
-    width: $tabset-tab-spacing;
+    right: -$component-border-width;
+    bottom: -$component-border-width;
+    width: $component-padding-vertical-medium;
     transform: translateX(100%);
-    border-bottom: 0.0625rem solid var(--color-context-border);
+    border-bottom: $component-border-width solid var(--color-context-border);
     content: '';
   }
 
@@ -64,9 +59,8 @@ $tabset-tab-large-vertical-padding: $component-padding-lg;
 }
 
 .ax-tabset__button {
-  padding-right: $component-padding-lg;
-  padding-left: $component-padding-lg;
   color: inherit;
+  line-height: $component-line-height;
 }
 
 .ax-tabset__content {
@@ -74,28 +68,26 @@ $tabset-tab-large-vertical-padding: $component-padding-lg;
 }
 
 // Tab sizing
-.ax-tabset__list-item--small {
+.ax-tabset__list-item--medium {
   .ax-tabset__button {
-    padding-top: $tabset-tab-small-vertical-padding;
-    padding-bottom: $tabset-tab-small-vertical-padding;
+    padding: $component-padding-vertical-medium $component-padding-horizontal-medium;
   }
 
   &:not(.ax-tabset__list-item--active) {
     .ax-tabset__button {
-      padding-top: $tabset-tab-small-vertical-padding - 0.0625rem;
+      padding-top: $component-padding-vertical-medium - $component-border-width;
     }
   }
 }
 
 .ax-tabset__list-item--large {
   .ax-tabset__button {
-    padding-top: $tabset-tab-large-vertical-padding;
-    padding-bottom: $tabset-tab-large-vertical-padding;
+    padding: $component-padding-vertical-large $component-padding-horizontal-large;
   }
 
   &:not(.ax-tabset__list-item--active) {
     .ax-tabset__button {
-      padding-top: $tabset-tab-large-vertical-padding - 0.0625rem;
+      padding-top: $component-padding-vertical-large - $component-border-width;
     }
   }
 }

@@ -1,11 +1,12 @@
 @import '../../design-patterns/animations/mixins';
 @import '../../design-patterns/spacing/mixins';
 @import '../../design-patterns/spacing/vars';
-@import '../form/vars';
 @import '../typography/vars';
+@import '../vars';
+@import './vars';
 
 .ax-chedio-buttox__container {
-  @include space-block($component-margin-sm);
+  @include space-block($spacing-grid-size * 2);
 
   display: flex;
   align-items: center;
@@ -27,8 +28,8 @@
     position: relative;
     width: $input-checkbox-size;
     height: $input-checkbox-size;
-    margin: 0 $component-padding-sm 0 0;
-    border: $input-border-width solid $input-border-color;
+    margin: 0 ($spacing-grid-size * 2) 0 0;
+    border: $component-border-width solid $input-border-color;
     background-color: $input-background-color;
 
     &::before {

@@ -33,8 +33,8 @@ describe('TextInput', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders with size small', () => {
-    const component = getComponent({ size: 'small' });
+  it('renders with size medium', () => {
+    const component = getComponent({ size: 'medium' });
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

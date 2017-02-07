@@ -4,6 +4,7 @@
 .ax-icon-link {
   @include transition((color));
 
+  display: flex;
   color: var(--color-context-text-subtle);
 
   &:hover  {

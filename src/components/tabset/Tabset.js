@@ -10,11 +10,11 @@ export default class Tabset extends Component {
   static propTypes = {
     activeTabIndex: PropTypes.number,
     children: PropTypes.node,
-    size: PropTypes.oneOf(['small', 'large']),
+    size: PropTypes.oneOf(['medium', 'large']),
   };
 
   static defaultProps = {
-    size: 'small',
+    size: 'medium',
   };
 
   componentWillMount() {

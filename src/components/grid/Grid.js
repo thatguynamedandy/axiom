@@ -38,7 +38,7 @@ export default class Grid extends Component {
 
   static defaultProps = {
     responsive: true,
-    gutters: true,
+    gutters: 'small',
     vGutters: true,
     hGutters: true,
   };

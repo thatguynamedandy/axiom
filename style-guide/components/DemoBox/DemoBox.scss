@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   min-height: $spacing-grid-size * 12;
-  padding: $component-padding-sm;
+  padding: $spacing-grid-size * 2;
   border: 0.0625rem solid var(--color-context-border);
   background-color: var(--color-context-background-disabled);
   color: var(--color-context-text-subtle);

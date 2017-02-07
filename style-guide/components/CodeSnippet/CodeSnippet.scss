@@ -7,7 +7,7 @@
 pre[class*='language-'] {
   @include space-block();
 
-  padding: $component-padding-md;
+  padding: ($spacing-grid-size * 3);
   border-radius: 0.1875rem;
   background-color: $color-ui-light-2;
 }

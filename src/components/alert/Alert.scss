@@ -2,11 +2,12 @@
 @import '../../design-patterns/spacing/mixins';
 @import '../../design-patterns/spacing/vars';
 @import '../typography/vars';
+@import '../vars';
 
 .ax-alert {
   @include space-block;
 
-  padding: $component-padding-lg $page-padding-h;
+  padding: $component-padding-vertical-large $page-padding-h;
   font-weight: $font-weight-medium;
 }
 

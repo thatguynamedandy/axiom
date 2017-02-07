@@ -62,7 +62,7 @@ export default class Icon extends Component {
   };
 
   static defaultProps = {
-    size: '0.875rem',
+    size: '1rem',
   };
 
   render() {

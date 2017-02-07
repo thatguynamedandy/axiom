@@ -24,6 +24,6 @@ textarea {
 
 // Input: Label
 .ax-input__label {
-  margin: 0 0 $component-padding-sm;
+  @include space-block($spacing-grid-size);
 }
 

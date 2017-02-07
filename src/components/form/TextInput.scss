@@ -3,6 +3,7 @@
 @import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
 @import '../typography/vars';
+@import '../vars';
 @import './vars';
 
 .ax-input__container {
@@ -12,11 +13,10 @@
   position: relative;
   flex: 1 1 auto;
   align-items: center;
-  border: $input-border-width solid $input-border-color;
+  border: $component-border-width solid $input-border-color;
   border-style: solid;
-  border-radius: $input-border-radius;
+  border-radius: $component-border-radius;
   background-color: $input-background-color;
-  font-size: $font-size-small;
 }
 
 .ax-input__container--disabled {
@@ -47,6 +47,7 @@
   flex: 1 1 auto;
   border: 0;
   background-color: transparent;
+  line-height: $component-line-height;
   text-overflow: ellipsis;
   appearance: none;
 
@@ -83,29 +84,25 @@
 
 
 // Sizing
-.ax-input__container--small {
+.ax-input__container--medium {
   .ax-input {
-    padding: $input-small-vertical-padding $input-small-horizontal-padding;
-    font-size: $input-small-font-size;
-    line-height: $input-small-line-height;
+    padding: $component-padding-vertical-medium $component-padding-horizontal-medium;
+    font-size: $font-size-small;
   }
 
   .ax-input__icon {
-    padding: 0 $input-small-horizontal-padding 0 0;
+    padding: 0 $component-padding-horizontal-medium 0 0;
   }
 }
 
 .ax-input__container--large {
   .ax-input {
-    padding: $input-large-vertical-padding $input-large-horizontal-padding;
-    font-size: $input-large-font-size;
-    // BUG: Currently Webkit decides this line-height is too small and explicitly
-    // overrides it and sets a minimum.
-    line-height: $input-large-line-height;
+    padding: $component-padding-vertical-large $component-padding-horizontal-large;
+    font-size: $font-size-heading-large;
   }
 
   .ax-input__icon {
-    padding: 0 $input-large-horizontal-padding 0 0;
+    padding: 0 $component-padding-horizontal-large 0 0;
   }
 }
 

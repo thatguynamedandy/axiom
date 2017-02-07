@@ -2,7 +2,7 @@ exports[`TextInput renders when disabled 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small ax-input__container--disabled">
+    className="ax-input__container ax-input__container--medium ax-input__container--disabled">
     <input
       className="ax-input"
       disabled={true}
@@ -17,7 +17,7 @@ exports[`TextInput renders when invalid 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small ax-input__container--invalid">
+    className="ax-input__container ax-input__container--medium ax-input__container--invalid">
     <input
       className="ax-input"
       disabled={undefined}
@@ -32,7 +32,7 @@ exports[`TextInput renders when valid 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small ax-input__container--valid">
+    className="ax-input__container ax-input__container--medium ax-input__container--valid">
     <input
       className="ax-input"
       disabled={undefined}
@@ -47,7 +47,7 @@ exports[`TextInput renders with TextInputIcon 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small">
+    className="ax-input__container ax-input__container--medium">
     <input
       className="ax-input"
       disabled={undefined}
@@ -62,8 +62,8 @@ exports[`TextInput renders with TextInputIcon 1`] = `
           className="ax-icon"
           style={
             Object {
-              "height": "0.75rem",
-              "width": "0.75rem",
+              "height": "1rem",
+              "width": "1rem",
             }
           }
           viewBox="0 0 14 14">
@@ -80,7 +80,7 @@ exports[`TextInput renders with defaultProps 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small">
+    className="ax-input__container ax-input__container--medium">
     <input
       className="ax-input"
       disabled={undefined}
@@ -102,7 +102,7 @@ exports[`TextInput renders with label 1`] = `
     </strong>
   </div>
   <div
-    className="ax-input__container ax-input__container--small">
+    className="ax-input__container ax-input__container--medium">
     <input
       className="ax-input"
       disabled={undefined}
@@ -128,11 +128,11 @@ exports[`TextInput renders with size large 1`] = `
 </label>
 `;
 
-exports[`TextInput renders with size small 1`] = `
+exports[`TextInput renders with size medium 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--small">
+    className="ax-input__container ax-input__container--medium">
     <input
       className="ax-input"
       disabled={undefined}
@@ -147,7 +147,7 @@ exports[`TextInput renders with style translucent 1`] = `
 <label
   className="ax-input__group">
   <div
-    className="ax-input__container ax-input__container--translucent ax-input__container--small">
+    className="ax-input__container ax-input__container--translucent ax-input__container--medium">
     <input
       className="ax-input"
       disabled={undefined}

@@ -23,7 +23,7 @@ $labs-border-width: 0.0625rem;
 
 .dm-labs__canvas {
   max-width: 100%;
-  padding: $container-padding-lg;
+  padding: $page-padding-v $page-padding-h;
   background-color: var(--color-context-background);
   filter: drop-shadow($drop-shadow);
 }

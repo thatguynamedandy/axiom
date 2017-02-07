@@ -1,7 +1,7 @@
 @import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
 @import '../containers/mixins';
-@import 'vars';
+@import '../vars';
 
 // Button Group: Base
 .ax-button__group {
@@ -25,7 +25,7 @@
     }
 
     &:hover {
-      border-right-width: $button-border-width;
+      border-right-width: $component-border-width;
 
       + .ax-button {
         border-left-width: 0;

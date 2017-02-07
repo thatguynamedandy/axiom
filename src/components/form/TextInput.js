@@ -13,7 +13,7 @@ export default class TextInput extends Component {
     disabled: PropTypes.bool,
     invalid: PropTypes.bool,
     label: PropTypes.string,
-    size: PropTypes.oneOf(['small', 'large']),
+    size: PropTypes.oneOf(['medium', 'large']),
     style: PropTypes.oneOf(['translucent']),
     valid: PropTypes.bool,
     onBlur: PropTypes.func,
@@ -21,7 +21,7 @@ export default class TextInput extends Component {
   };
 
   static defaultProps = {
-    size: 'small',
+    size: 'medium',
   };
 
   componentWillMount() {
