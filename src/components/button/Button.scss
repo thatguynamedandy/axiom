@@ -77,7 +77,7 @@ button {
   &:hover  { background-color: $color-ui-primary-2; }
   &:active { background-color: $color-ui-primary-0; }
 
-  &[disabled] {
+  &:disabled {
     background-color: var(--color-context-background-disabled);
     color: var(--color-context-text-disabled);
   }
@@ -89,7 +89,8 @@ button {
   color: $color-ui-primary-1;
 
   &:hover  {
-    border-color: $color-ui-primary-2;
+    border-color: transparent;
+    background-color: var(--color-context-border);
     color: $color-ui-primary-2;
   }
 
@@ -99,8 +100,9 @@ button {
     color: $color-ui-light-2;
   }
 
-  &[disabled] {
+  &:disabled {
     border-color: var(--color-context-border);
+    background-color: transparent;
     color: var(--color-context-text-disabled);
   }
 }
@@ -108,11 +110,20 @@ button {
 .ax-button--tertiary {
   color: $color-ui-primary-1;
 
-  &:hover     { color: $color-ui-primary-2; }
-  &:active    { color: $color-ui-primary-0; }
-  &[disabled] { color: var(--color-context-text-disabled); }
-}
+  &:hover {
+    background-color: var(--color-context-border);
+    color: $color-ui-primary-2;
+  }
 
+  &:active {
+    color: $color-ui-primary-0;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: var(--color-context-text-disabled);
+  }
+}
 
 
 // Button: sizes
