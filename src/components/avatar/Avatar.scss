@@ -1,4 +1,4 @@
-@import '../../design-patterns/colors/vars';
+@import '../vars';
 
 // Avatar Base
 .ax-avatar {
@@ -7,5 +7,5 @@
   border-radius: 50%;
 }
 
-.ax-avatar--small { border-width: 0.0625rem; }
-.ax-avatar--large { border-width: 0.125rem; }
+.ax-avatar--small { border-width: $component-border-width-small; }
+.ax-avatar--large { border-width: $component-border-width-large; }

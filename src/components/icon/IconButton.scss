@@ -2,12 +2,12 @@
 @import '../../design-patterns/colors/vars';
 @import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
+@import '../vars';
 
 .ax-icon-button {
   @include space-block();
   @include transition((background-color, border-color, color));
 
-  padding: 0;
   border: 0 solid var(--color-context-border);
   border-style: solid;
   border-radius: 50%;
@@ -36,19 +36,16 @@
 }
 
 .ax-icon-button--small {
-  width: $spacing-grid-size * 6;
-  height: $spacing-grid-size * 6;
-  border-width: 0.0625rem;
+  padding: $spacing-grid-size - $component-border-width-small;
+  border-width: $component-border-width-small;
 }
 
 .ax-icon-button--medium {
-  width: $spacing-grid-size * 12;
-  height: $spacing-grid-size * 12;
-  border-width: 0.0625rem;
+  padding: ($spacing-grid-size * 2) - $component-border-width-small;
+  border-width: $component-border-width-small;
 }
 
 .ax-icon-button--large {
-  width: $spacing-grid-size * 18;
-  height: $spacing-grid-size * 18;
-  border-width: 0.125rem;
+  padding: ($spacing-grid-size * 3) - $component-border-width-large;
+  border-width: $component-border-width-large;
 }
