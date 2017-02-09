@@ -13,7 +13,7 @@ import {
 export default class CardContent extends Component {
   render() {
     return (
-      <Grid responsive={ false } vAlign="middle">
+      <Grid gutters="large" responsive={ false } vAlign="middle">
         <GridCell shrink={ true } textCenter="small">
           <Avatar size="5rem" src="assets/avatar.png" />
         </GridCell>
