@@ -1,6 +1,49 @@
-@import '../typography/mixins';
+@import '../../design-patterns/spacing/vars';
+@import '../../design-patterns/spacing/mixins';
+@import './vars';
 
-.ax-heading--display  { @include heading('display') }
-.ax-heading--headline { @include heading('headline') }
-.ax-heading--title    { @include heading('title') }
-.ax-heading--large    { @include heading('large') }
+.ax-heading--display,
+.ax-heading--headling,
+.ax-heading--title,
+.ax-heading--large {
+  @include space-block($spacing-grid-size);
+}
+
+.ax-heading--display {
+  font-size: $font-size-display;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-display;
+
+  &.ax-text--weak,
+  .ax-text--weak {
+    font-weight: $font-weight-display-weak;
+  }
+}
+
+.ax-heading--headline {
+  font-size: $font-size-headline;
+  font-weight: $font-weight-headline-standard;
+  line-height: $line-height-headline;
+}
+
+.ax-heading--title {
+  font-size: $font-size-title;
+  font-weight: $font-weight-title-standard;
+  line-height: $line-height-title;
+
+  &.ax-text--strong,
+  .ax-text--strong {
+    font-weight: $font-weight-title-strong;
+  }
+}
+
+.ax-heading--large {
+  font-size: $font-size-large;
+  font-weight: $font-weight-large-standard;
+  line-height: $line-height-large;
+
+  &.ax-text--strong,
+  .ax-text--strong {
+    font-weight: $font-weight-large-strong;
+  }
+}

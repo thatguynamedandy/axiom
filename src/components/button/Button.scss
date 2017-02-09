@@ -4,7 +4,6 @@
 @import '../../design-patterns/spacing/vars';
 @import '../../design-patterns/spacing/mixins';
 @import '../typography/vars';
-@import '../typography/mixins';
 @import '../vars';
 
 // Button: Core
@@ -39,6 +38,7 @@ button {
   border-color: transparent;
   background-color: transparent;
   font-weight: $font-weight-bold;
+  letter-spacing: 0.001875rem;
   line-height: $component-line-height;
   text-align: center;
   text-transform: uppercase;
@@ -128,5 +128,5 @@ button {
 
 .ax-button--large {
   padding: $component-padding-vertical-large $component-padding-horizontal-large;
-  font-size: $font-size-heading-large;
+  font-size: $font-size-large;
 }
