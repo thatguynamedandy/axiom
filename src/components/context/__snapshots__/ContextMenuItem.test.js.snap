@@ -2,7 +2,7 @@
 
 exports[`ContextMenuItem renders with defaultProps 1`] = `
 <li
-  className="ax-context-menu__list-item"
+  className=""
 >
   <button
     className="ax-context-menu__item"
