@@ -18,7 +18,8 @@
   "scripts": {
     "build-css": "NODE_ENV=production BABEL_ENV=production webpack --config webpack.css.config.js",
     "build-static": "NODE_ENV=production BABEL_ENV=production webpack --config webpack.static.config.js",
-    "gh-pages": "BASENAME_ENV=\"'/axiom/'\" yarn build-static && gh-pages -d ./static --repo git@github.com:BrandwatchLtd/axiom.git",
+    "gh-pages": "BASENAME_ENV=\"'/axiom/'\" yarn build-static && gh-pages -d ./static --add --repo git@github.com:thatguynamedandy/axiom.git",
+    "gh-pages-pr": "BASENAME_ENV=\"'/axiom/pull-request/${BRANCH}/'\" yarn build-static && gh-pages -d ./static --dest pull-request/${BRANCH} --repo git@github.com:thatguynamedandy/axiom.git",
     "lint": "yarn run lint-js && yarn run lint-css",
     "lint-css": "stylelint 'src/**/*.css' 'style-guide/**/*.css'",
     "lint-js": "eslint --config .eslintrc ./src ./style-guide",
@@ -36,7 +37,8 @@
     "normalize.css": "^4.2.0",
     "popper.js": "1.0.6",
     "prop-types": "^15.5.8",
-    "react-modal": "^1.4.0"
+    "react-modal": "^1.4.0",
+    "string-replace-loader": "^1.2.0"
   },
   "peerDependencies": {
     "react": "^15.4.1"
@@ -61,7 +63,7 @@
     "eslint": "^3.7.1",
     "eslint-plugin-react": "^6.0.0",
     "extract-text-webpack-plugin": "^2.1.0",
-    "gh-pages": "^0.12.0",
+    "gh-pages": "1.0.0",
     "html-webpack-plugin": "^2.24.1",
     "jest": "^19.0.2",
     "js-beautify": "^1.6.2",
