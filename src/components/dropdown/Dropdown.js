@@ -15,6 +15,11 @@ export default class Dropdown extends Component {
     position: PropTypes.string,
   };
 
+  static contextTypes = {
+    closeDropdown: PropTypes.func,
+    openDropdown: PropTypes.func,
+  };
+
   static childContextTypes = {
     closeDropdown: PropTypes.func.isRequired,
     openDropdown: PropTypes.func.isRequired,
@@ -38,11 +43,15 @@ export default class Dropdown extends Component {
   }
 
   open() {
+    const { openDropdown = () => {} } = this.context;
     this.setState({ isVisible: true });
+    openDropdown();
   }
 
   close() {
+    const { closeDropdown  = () => {} } = this.context;
     this.setState({ isVisible: false });
+    closeDropdown();
   }
 
   render() {

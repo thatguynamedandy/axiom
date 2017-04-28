@@ -61,6 +61,7 @@ export { default as LogoTab } from './components/logo/LogoTab';
 export { default as Menu } from './components/menu/Menu';
 export { default as MenuItem } from './components/menu/MenuItem';
 export { default as Modal } from './components/modal/Modal';
+export { default as Option } from './components/select/Option';
 export { default as Paragraph } from './components/typography/Paragraph';
 export { default as Platform } from './components/platform/Platform';
 export { default as Position } from './components/position/Position';
@@ -72,6 +73,7 @@ export { default as ProgressInfinite } from './components/progress/ProgressInfin
 export { default as RadioButton } from './components/form/RadioButton';
 export { default as RadioButtonGroup } from './components/form/RadioButtonGroup';
 export { default as Reveal } from './components/reveal/Reveal';
+export { default as Select } from './components/select/Select';
 export { default as Small } from './components/typography/Small';
 export { default as Strike } from './components/typography/Strike';
 export { default as Strong } from './components/typography/Strong';

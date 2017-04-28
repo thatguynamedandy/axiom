@@ -23,6 +23,7 @@ module.exports = {
   '/components/position': require('../../src/components/position/example'),
   '/components/progress': require('../../src/components/progress/example'),
   '/components/reveal': require('../../src/components/reveal/example'),
+  '/components/select': require('../../src/components/select/example'),
   '/components/tabset': require('../../src/components/tabset/example'),
   '/components/table': require('../../src/components/table/example'),
   '/components/tooltip': require('../../src/components/tooltip/example'),
