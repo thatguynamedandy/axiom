@@ -18,6 +18,7 @@
   animation-duration: var(--transition-time-slow);
   animation-fill-mode: forwards;
   animation-timing-function: var(--transition-function);
+  user-select: none;
 }
 
 .ax-word--rose { color: var(--color-brand-rose); }
