@@ -44,6 +44,7 @@ export default {
   '/docs/composites/change-password': require('../src/composites/change-password/example').default,
   '/docs/composites/login': require('../src/composites/login/example').default,
   '/docs/composites/logo-page': require('../src/composites/logo-page/example').default,
+  '/docs/composites/search-form': require('../src/composites/search-form/example').default,
   '/docs/composites/status-pages': require('../src/composites/status-pages/example').default,
   '/docs/composites/usermenu': require('../src/composites/usermenu/example').default,
   '/docs/charts/bars': require('../src/charts/bars/example').default,

@@ -59,6 +59,7 @@ module.exports = {
           'change-password': { name: 'Change Password' },
           'login': { name: 'Login Page' },
           'logo-page': { name: 'Logo Page' },
+          'search-form': { name: 'Search Form' },
           'status-pages': { name: 'Status Pages' },
           'usermenu': { name: 'User Menu' },
         },
