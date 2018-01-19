@@ -68,7 +68,7 @@ export default class Select extends Component {
           <SelectInput
               { ...omit(props, ['onSelect', 'selectedValue']) } />
         </DropdownTarget>
-        <DropdownContent focusFirstItem>
+        <DropdownContent focusOnOpen>
           <Context>
             { Children.map(children, (child, index) =>
               cloneElement(child, { index: index.toString() })) }
