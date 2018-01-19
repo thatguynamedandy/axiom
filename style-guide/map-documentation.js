@@ -43,6 +43,7 @@ module.exports = {
           'position': { name: 'Position' },
           'progress': { name: 'Progress' },
           'reveal': { name: 'Reveal' },
+          'select': { name: 'Select' },
           'table': { name: 'Table' },
           'tabset': { name: 'Tabset' },
           'toggle': { name: 'Toggle' },
