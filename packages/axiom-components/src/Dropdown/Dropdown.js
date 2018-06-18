@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { findComponent } from '@brandwatch/axiom-utils';
 import Position from '../Position/Position';
 import PositionSource from '../Position/PositionSource';
@@ -7,6 +8,7 @@ import PositionTarget from '../Position/PositionTarget';
 import { DropdownSourceRef } from './DropdownSource';
 import { DropdownTargetRef } from './DropdownTarget';
 
+/* eslint-disable react/no-find-dom-node */
 export default class Dropdown extends Component {
   static propTypes = {
     /**
@@ -56,6 +58,14 @@ export default class Dropdown extends Component {
     this.state = { isVisible: false };
   }
 
+  componentDidMount() {
+    document.addEventListener('click', e => this.handleClick(e), true);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('click', e => this.handleClick(e), true);
+  }
+
   getChildContext() {
     return {
       closeDropdown: () => this.close(),
@@ -79,6 +89,12 @@ export default class Dropdown extends Component {
     if (onRequestClose) onRequestClose();
   }
 
+  handleClick(event) {
+    if (this._content && !ReactDOM.findDOMNode(this._content).contains(event.target)) {
+      this.close();
+    }
+  }
+
   render() {
     const { children, offset, position, ...rest } = this.props;
     const { isVisible } = this.state;
@@ -90,8 +106,12 @@ export default class Dropdown extends Component {
           offset={ offset }
           onMaskClick={ () => this.close() }
           position={ position }>
-        <PositionTarget>{ findComponent(children, DropdownTargetRef) }</PositionTarget>
-        <PositionSource>{ findComponent(children, DropdownSourceRef) }</PositionSource>
+        <PositionTarget>
+          { React.cloneElement(findComponent(children, DropdownTargetRef)) }
+        </PositionTarget>
+        <PositionSource ref={ (el) => this._content = el }>
+          { findComponent(children, DropdownSourceRef) }
+        </PositionSource>
       </Position>
     );
   }
