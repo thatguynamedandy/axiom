@@ -24,7 +24,7 @@ export default class TooltipTarget extends Component {
     const { onMouseMove = () => {} } = children.props;
 
     if (delay && !this.showTimeout) {
-      this.showTimeout = setTimeout(() => showTooltip(), DELAY_TIMEOUT);
+      this.showTimeout = setTimeout(showTooltip, DELAY_TIMEOUT);
     }
 
     if (!delay) showTooltip();
