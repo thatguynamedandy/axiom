@@ -18,7 +18,7 @@ export default class TooltipTarget extends Component {
 
   static typeRef = TooltipTargetRef;
 
-  handleMouseMove(event, ...args) {
+  handleMouseMove(...args) {
     const { children, delay } = this.props;
     const { showTooltip } = this.context;
     const { onMouseMove = () => {} } = children.props;
@@ -29,7 +29,7 @@ export default class TooltipTarget extends Component {
 
     if (!delay) showTooltip();
 
-    onMouseMove(event, ...args);
+    onMouseMove(...args);
   }
 
   handleMouseLeave(...args) {
