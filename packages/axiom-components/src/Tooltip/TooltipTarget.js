@@ -2,10 +2,12 @@ import PropTypes from 'prop-types';
 import { Component, cloneElement } from 'react';
 
 export const TooltipTargetRef = 'TooltipTarget';
+const DELAY_TIMEOUT = 1000;
 
 export default class TooltipTarget extends Component {
   static propTypes = {
     children: PropTypes.node,
+    delay: PropTypes.bool,
     onClick: PropTypes.func,
   };
 
@@ -16,19 +18,29 @@ export default class TooltipTarget extends Component {
 
   static typeRef = TooltipTargetRef;
 
-  handleMouseMove(...args) {
-    const { children } = this.props;
+  handleMouseMove(event, ...args) {
+    const { children, delay } = this.props;
     const { showTooltip } = this.context;
     const { onMouseMove = () => {} } = children.props;
 
-    showTooltip();
-    onMouseMove(...args);
+    if (delay && !this.showTimeout) {
+      this.showTimeout = setTimeout(() => showTooltip(), DELAY_TIMEOUT);
+    }
+
+    if (!delay) showTooltip();
+
+    onMouseMove(event, ...args);
   }
 
   handleMouseLeave(...args) {
     const { children } = this.props;
     const { hideTooltip } = this.context;
     const { onMouseLeave = () => {} } = children.props;
+
+    if (this.showTimeout) {
+      clearTimeout(this.showTimeout);
+      this.showTimeout = undefined;
+    }
 
     hideTooltip();
     onMouseLeave(...args);

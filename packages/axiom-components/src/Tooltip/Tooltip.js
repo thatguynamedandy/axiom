@@ -15,6 +15,10 @@ export default class Tooltip extends Component {
      */
     children: PropTypes.node,
     /**
+     * Adds delay to the opening of the tooltip
+     */
+    delay: PropTypes.bool,
+    /**
      * Adds control to enable or disable showing the TooltipSource
      */
     enabled: PropTypes.bool,
@@ -35,6 +39,7 @@ export default class Tooltip extends Component {
   };
 
   static defaultProps = {
+    delay: false,
     enabled: true,
     position: 'top',
   };
@@ -66,12 +71,14 @@ export default class Tooltip extends Component {
   }
 
   render() {
-    const { children, onClick, position, ...rest } = this.props;
+    const { children, delay, onClick, position, ...rest } = this.props;
     const { isVisible } = this.state;
 
     return (
       <Position { ...rest } isVisible={ isVisible } position={ position }>
-        <PositionTarget onClick={ onClick }>{ findComponent(children, TooltipTargetRef) }</PositionTarget>
+        <PositionTarget delay={ delay } onClick={ onClick }>
+          { findComponent(children, TooltipTargetRef) }
+        </PositionTarget>
         <PositionSource>{ findComponent(children, TooltipSourceRef) }</PositionSource>
       </Position>
     );
