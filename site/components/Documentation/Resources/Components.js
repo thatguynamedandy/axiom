@@ -18,6 +18,7 @@ import Dialog from './Components/Dialog';
 import Dropdown from './Components/Dropdown';
 import Editable from './Components/Editable';
 import Form from './Components/Form';
+import CardGraphic from './Components/CardGraphic';
 import Grid from './Components/Grid';
 import Icon from './Components/Icon';
 import Image from './Components/Image';
@@ -90,6 +91,10 @@ export default class Documentation extends Component {
             id: 'card',
             name: 'Card',
             Component: Card,
+          }, {
+            id: 'card-graphic',
+            name: 'Card Graphic',
+            Component: CardGraphic,
           }, {
             id: 'cloak',
             name: 'Cloak',

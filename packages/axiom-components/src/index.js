@@ -69,6 +69,7 @@ export { default as DropdownTarget } from './Dropdown/DropdownTarget';
 export { default as EditableLine } from './Editable/EditableLine';
 export { default as EditableTitle } from './Editable/EditableTitle';
 export { default as Form } from './Form/Form';
+export { default as Ghost } from './CardGraphic/Ghost';
 export { default as Grid } from './Grid/Grid';
 export { default as GridCell } from './Grid/GridCell';
 export { default as Heading } from './Typography/Heading';
